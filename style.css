@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "PT Sans", sans-serif;
+    margin: 0;
+    color: #000;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+
+/*Navbar*/
+header{
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+header nav {
+    height: 70px;
+    max-width: 1750px;
+    background-color: #fff;
+    color: #000;
+}
+
+header nav ul {
+    padding: 0px;
+    margin: 0;
+}
+
+header nav ul li:first-child {
+    margin-top: 12px;
+}
+
+header nav li {
+    display: inline;
+    float: left;
+    margin-top: 25px;
+    padding: 0 20px;
+}
+
+header nav a {
+    display: inline;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header nav .openup-logo {
+    display: none;
+}
+
+header nav li img{
+    width: 100px;
+    cursor: pointer;
+}
+
+
+/*SlideShow content*/
+.slideshow{
+    max-width: 1750px;
+    margin: 0 auto;
+    background: #eee;
+}
+
+.slideshow-container{
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mySlides{
+    display: none;
+}
+
+.mySlides img{
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.mySlides img:hover{
+    transform: scale(1.03);
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #bbb;
+    transition: 0.6s ease;
+    user-select: none;
+    font-size: 2rem;
+    transform: translate(0 ,-50%);
+}
+
+.next{
+    right: 0;
+}
+
+.prev:hover, .next:hover{
+    color: #fff;
+}
+
+.scrollbar{
+    text-align: center;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50% ,-20%);
+}
+
+.dot{
+    cursor: pointer;
+    height: 4px;
+    width: 50px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #0077da;
+}
+
+.dot:hover{
+    background-color: #fff;
+}
+
+.showoff{
+    display: none;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/*Main post*/
+
+.main-post{
+    max-width: 1750px;
+    margin: 0 auto;
+    background: #eee;
+}
+
+.main-post h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 15px 0px;
+}
+
+.main-post-row1{
+    padding: 25px 80px 20px 80px;
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    grid-gap: 20px;
+}
+
+.main-post-row2{
+    padding: 25px 80px 20px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.card {
+    background: #fff;
+    overflow: hidden;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 30px;
+}
+.card-text h2 ,.card-text p ,.card-text h3{
+    margin: 0;
+    padding: 5px;
+}
+
+.card-text-last{
+    font-weight: 700;
+}
+
+.card img{
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.card img:hover{
+    transform: scale(1.03);
+}
+
+.long-card{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+/*Footer*/
+
+footer {
+    max-width: 1750px;
+    margin: 0 auto;
+}
+footer .contact{
+    text-align: center;
+    padding: 16px 23px;
+}
+
+footer .contact h2{
+    font-size: 2.3em;
+    font-weight: 500;
+}
+
+footer .contact p{
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+footer hr {
+    border: 0.5px solid #ddd;
+}
+
+.footer-nav{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100px;
+    padding-left: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-nav img{
+    width: 150px;
+}
+
+.footer-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer-nav ul li{
+    padding: 0 20px;
+}
+
+.footer-nav ul li a{
+    padding-bottom: 2px;
+}
+
+footer .footer-logo{
+    width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer .footer-logo img{
+    margin: 0 auto;
+}
+
+
+footer .footer-menu-privacy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+}
+
+footer .footer-menu-privacy li{
+    padding: 0 15px;
+}
+
+footer .footer-menu-privacy a{
+    font-size: 0.9rem;
+}
+
+footer .copyRight{
+    text-align: center;
+    margin: 25px 0px;
+}
+
+/*media query*/
+@media(max-width: 1200px) {
+    /*main card content*/
+    .main-post-row1{
+        grid-template-columns: repeat(2 ,1fr);
+    }
+    .main-post-row1,.main-post-row2{
+        padding: 25px 50px 20px 50px;
+    }
+    .long-card{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    /*footer*/
+    .footer-nav{
+        flex-direction: column;
+        margin: 30px 0 70px 0;
+    }
+}
+
+@media(max-width: 900px){
+
+    /*header navbar*/
+    header nav {
+        height: auto;
+        border-bottom: 0;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+    }
+
+    header nav ul {
+        display: none;
+        height: auto;
+    }
+    header nav li {
+        width: 100%;
+        float: left;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul li:first-child {
+        display: none;
+    }  
+
+    header nav a {
+        display: inline-block;
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        background: #fff;
+        border-bottom: 1px solid #555;
+        padding: 10px;
+    }
+
+    header nav a:hover {
+        background: #444;
+        color: #fff;
+    }  
+
+    header nav .openup-logo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav .openup-logo img{
+        width: 110px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    header nav .openup-logo #openup{
+        background: #fff;
+        color: #000;
+        border-bottom: hidden;
+        text-indent: 0;
+
+        text-align: right;
+        width: 50px;
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+
+    header nav .openup-logo #openup:active{
+        border: 2px solid #000;
+    }
+    
+
+    /*slide image*/
+    .slideshow{
+        padding-top: 72px;
+    }
+    .slideimg1 img{
+        content: url('https://lumiere-a.akamaihd.net/v1/images/1814x2894_0e840360.jpeg?region=0,0,1814,2894&width=768');
+    }
+    .slideimg2 img{
+        content: url('https://lumiere-a.akamaihd.net/v1/images/mld_kv_revised-for-mobile_68afa6f8.jpeg?region=0,0,1814,2894&width=768');
+    }
+    .slideimg3 img{
+        content: url('https://lumiere-a.akamaihd.net/v1/images/billboard_1814x2894mb_nodate_4641b85f.jpeg?region=0,0,1814,2894&width=768');
+    }
+    .slideimg4 img{
+        content: url('https://lumiere-a.akamaihd.net/v1/images/hero-billboard_1814x2894mb_cba52ab6.png?region=0,0,1814,2894&width=768');
+    }
+    /*scrollbar*/
+    .scrollbar{
+        position: relative;
+        margin: 30px 0px;
+    }
+    .dot:hover{
+        background-color: #0077da;
+    }
+    .prev ,.next{
+        display: none;
+    }
+    /*main card*/
+    .main-post-row1{
+        grid-template-columns: 1fr;
+    }
+    .long-card{
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+    .main-post-row2{
+        grid-template-columns: 1fr;
+    }
+    .main-post-row1,.main-post-row2{
+        padding: 25px 40px 20px 40px;
+    }
+    /*footer navbar*/
+    .footer-nav{
+        height: 400px;
+        padding-left: 0;
+    }
+    .footer-nav ul{
+        flex-direction: column;
+    }
+
+    .footer-nav ul li{
+        margin: 10px 0;
+    }
+}
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+
+
+
+
+
+
+
+
+  
